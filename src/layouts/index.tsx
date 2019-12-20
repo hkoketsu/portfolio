@@ -6,8 +6,9 @@ import 'modern-normalize'
 import '../styles/normalize'
 
 import Header from '../components/Header'
-import LayoutRoot from '../components/LayoutRoot'
-import LayoutMain from '../components/LayoutMain'
+import LayoutRoot from './LayoutRoot'
+import LayoutMain from './LayoutMain'
+import TopNav from '../components/nav/TopNav'
 
 interface StaticQueryProps {
   site: {
@@ -40,6 +41,7 @@ const IndexLayout: React.FC = ({ children }) => (
             { name: 'keywords', content: data.site.siteMetadata.keywords }
           ]}
         />
+        <TopNav/>
         <Header title={data.site.siteMetadata.title} />
         <LayoutMain>{children}</LayoutMain>
       </LayoutRoot>
