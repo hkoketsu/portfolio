@@ -54,7 +54,7 @@ export default `
 
   table {
     width: 100%;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
     border: 1px solid ${colors.ui.light};
     font-size: 85%;
     border-collapse: collapse;
@@ -122,7 +122,7 @@ export default `
   ol,
   dl {
     margin-top: 0;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
   }
 
   dt {
