@@ -5,10 +5,10 @@ import NavItem from './NavItem'
 const TopNav: React.FC = () => (
   <StyledTopNav>
     <StyledList>
-      <NavItem url="/">about</NavItem>
-      <NavItem url="/">work</NavItem>
-      <NavItem url="/">skill</NavItem>
-      <NavItem url="/">contact</NavItem>
+      <NavItem url="#about">about</NavItem>
+      <NavItem url="#work">work</NavItem>
+      <NavItem url="#skill">skill</NavItem>
+      <NavItem url="#contact">contact</NavItem>
     </StyledList>
   </StyledTopNav>
 )
