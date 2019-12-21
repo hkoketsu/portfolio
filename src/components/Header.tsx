@@ -1,16 +1,30 @@
-import * as React from 'react'
 import styled from '@emotion/styled'
-import { transparentize } from 'polished'
-import { Link } from 'gatsby'
-
-import { heights, dimensions, colors } from '../styles/variables'
+import * as React from 'react'
+import oceanImg from '../img/ocean.jpg'
+import { colors, heights } from '../styles/variables'
 import Container from './Container'
 
+interface HeaderProps {
+  title: string
+}
+
+const Header: React.FC<HeaderProps> = ({ title }) => (
+  <StyledHeader>
+    <HeaderInner>
+      <HeaderTitle>{title}</HeaderTitle>
+    </HeaderInner>
+  </StyledHeader>
+)
+
+export default Header
+
 const StyledHeader = styled.header`
-  height: ${heights.header}px;
-  padding: 0 ${dimensions.containerPadding}rem;
-  background-color: ${colors.brand};
-  color: ${transparentize(0.5, colors.white)};
+  display: flex;
+  align-items: center;
+  background-image: url(${oceanImg});
+  color: #f7f7f7;
+  justify-content: center;
+  height: 100vh;
 `
 
 const HeaderInner = styled(Container)`
@@ -20,27 +34,11 @@ const HeaderInner = styled(Container)`
   height: 100%;
 `
 
-const HomepageLink = styled(Link)`
+const HeaderTitle = styled.h1`
   color: ${colors.white};
-  font-size: 1.5rem;
-  font-weight: 600;
 
   &:hover,
   &:focus {
     text-decoration: none;
   }
 `
-
-interface HeaderProps {
-  title: string
-}
-
-const Header: React.FC<HeaderProps> = ({ title }) => (
-  <StyledHeader>
-    <HeaderInner>
-      <HomepageLink to="/">{title}</HomepageLink>
-    </HeaderInner>
-  </StyledHeader>
-)
-
-export default Header
