@@ -3,13 +3,12 @@ import * as React from 'react'
 import IndexLayout from '../layouts'
 import Section from '../components/Section'
 import AboutSection from '../components/about/AboutSection'
+import WorkSection from '../components/work/WorkSection'
 
 const IndexPage = () => (
   <IndexLayout>
-    <AboutSection/>
-    <Section title='Work' id='work'>
-      aa
-    </Section>
+    <AboutSection />
+    <WorkSection />
     <Section title='Skill' id='skill'>
       aa
     </Section>
