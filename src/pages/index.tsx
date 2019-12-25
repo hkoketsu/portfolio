@@ -4,14 +4,13 @@ import IndexLayout from '../layouts'
 import Section from '../components/Section'
 import AboutSection from '../components/about/AboutSection'
 import WorkSection from '../components/work/WorkSection'
+import SkillSection from '../components/skill/SkillSection'
 
 const IndexPage = () => (
   <IndexLayout>
     <AboutSection />
     <WorkSection />
-    <Section title='Skill' id='skill'>
-      aa
-    </Section>
+    <SkillSection />
     <Section title='Contact' id='contact'>
       aa
     </Section>
