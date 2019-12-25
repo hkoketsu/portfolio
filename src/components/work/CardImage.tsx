@@ -3,24 +3,22 @@ import styled from '@emotion/styled'
 
 type CardImgLinkProps = {
   href: string,
-  src: string,
+  image: string,
   alt: string
 }
 
-const CardImage: React.FC<CardImgLinkProps> = ({ href, src, alt }) => (
+const CardImage: React.FC<CardImgLinkProps> = ({ href, image, alt }) => (
   <StyledLink href={href}>
-    <StyledImg src={src} alt={alt} />
+    <StyledImg src={require(`../../img/cards/${image}`)} alt={alt} />
   </StyledLink>
 )
 
 export default CardImage
 
 const StyledLink = styled.a`
-  flex-basis: 31%;
-  margin-bottom: 60px;
 `
 
 const StyledImg = styled.img`
   width: 100%;
-  margin-bottom: 10px;  
+  padding: 0 20px;
 `

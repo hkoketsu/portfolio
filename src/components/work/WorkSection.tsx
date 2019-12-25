@@ -2,20 +2,20 @@ import * as React from 'react'
 import Section from '../Section'
 import styled from '@emotion/styled'
 import Card from './Card'
-import appImg from '../../img/cards/procrastination-checker.png'
-import rabbitImg from '../../img/cards/rabbit-rocket.png'
-import rentalImg from '../../img/cards/rental-system.png'
-import webImg from '../../img/cards/global-jp-bbs.png'
-import { ProcrastinationCheckerCaps, RabbitRockerCaps, RentalSystemCaps, GlocalJpBbsCaps } from './Captions'
+import cardData from './card_data'
+import { Grid } from '@material-ui/core'
 
 
 const WorkSection: React.FC = () => (
   <Section title='Works' id='work'>
     <CardWrapper>
-      <Card src={appImg} alt='1' cap={ProcrastinationCheckerCaps}/>
-      <Card src={rabbitImg} alt='2' cap={RabbitRockerCaps} />
-      <Card src={rentalImg} alt='3' cap={RentalSystemCaps} />
-      <Card src={webImg} alt='4' cap={GlocalJpBbsCaps} />
+      {
+        cardData.data.map((data: any) => (
+          <Grid item xs={6}>
+            <Card src={data.image_src} url={data.url} caption={data.caption} />
+          </Grid>
+        ))
+      }
     </CardWrapper>
   </Section>
 )
@@ -23,7 +23,8 @@ const WorkSection: React.FC = () => (
 export default WorkSection
 
 const CardWrapper = styled.div`
+  max-width: 80%;
   display: flex;
+  margin: auto;
   flex-wrap: wrap;
-  justify-content: space-between;
 `

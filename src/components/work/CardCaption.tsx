@@ -4,14 +4,14 @@ import styled from '@emotion/styled'
 export interface ICaption {
   title: string,
   info: string,
-  url: string
+  language: string
 }
 
 const CardCaption: React.FC<ICaption> = (caption) => (
   <StyledCaptionWrapper>
     <StyledTitle>{caption.title}</StyledTitle>
     <StyledInfo>{caption.info}</StyledInfo>
-    <StyledUrl url={caption.url} />
+    <StyledInfo>{caption.language}</StyledInfo>
   </StyledCaptionWrapper>
 )
 
@@ -23,10 +23,11 @@ const StyledCaptionWrapper = styled.div`
 const StyledTitle = styled.div`
   font-size: 12px;
   font-weight: bold;
-  margin-top: 8px;
+  margin: 10px 0;
 `
-const StyledInfo = styled.div`
+const StyledInfo = styled.p`
   font-size: 10px;
+  padding: 5px;
 `
 
 type UrlProps = {

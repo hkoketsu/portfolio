@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "image_src": "rental-system.png",
+      "url": "https://github.com/hkoketsu/rental-system",
+      "caption": {
+        "title": "Rental System",
+        "info": "GUI Database App",
+        "language": "JavaFX / Oracle DB / SQL"
+      }
+    },
+    {
+      "image_src": "procrastination-checker.png",
+      "url": "https://github.com/hkoketsu/procrastination-checker",
+      "caption": {
+        "title": "Procrastination Checker",
+        "info": "Android App",
+        "language": "Kotlin / UsageStatsManager API"
+      }
+    },
+    {
+      "image_src": "global-jp-bbs.png",
+      "url": "https://global-jp-bbs.herokuapp.com/",
+      "caption": {
+        "title": "Global JP BBS",
+        "info": "Web app",
+        "language": "Django / HTML / CSS"
+      }
+    },
+    {
+      "image_src": "rabbit-rocket.png",
+      "url": "https://github.com/hkoketsu/rabbit-rocket",
+      "caption": {
+        "title": "Rabbit Rocket",
+        "info": "2D Shooting Game",
+        "language": "Java"
+      }
+    }
+  ]
+}
