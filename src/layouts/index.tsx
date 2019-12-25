@@ -7,6 +7,7 @@ import '../styles/normalize'
 
 import TopNav from '../components/nav/TopNav'
 import ResetCSS from './reset_css'
+import NormalizeCSS from './normalize_css'
 
 interface StaticQueryProps {
   site: {
@@ -33,6 +34,7 @@ const IndexLayout: React.FC = ({ children }) => (
     render={(data: StaticQueryProps) => (
       <>
         <ResetCSS/>
+        <NormalizeCSS/>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
