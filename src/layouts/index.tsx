@@ -9,6 +9,7 @@ import Header from '../components/Header'
 import LayoutRoot from './LayoutRoot'
 import LayoutMain from './LayoutMain'
 import TopNav from '../components/nav/TopNav'
+import Footer from '../components/Footer'
 
 interface StaticQueryProps {
   site: {
@@ -44,6 +45,7 @@ const IndexLayout: React.FC = ({ children }) => (
         <TopNav/>
         <Header title={data.site.siteMetadata.title} />
         <LayoutMain>{children}</LayoutMain>
+        <Footer/>
       </LayoutRoot>
     )}
   />
