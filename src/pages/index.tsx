@@ -1,13 +1,13 @@
 import IndexLayout from '../layouts'
 import AboutSection from '../components/about/AboutSection'
-import WorkSection from '../components/work/WorkSection'
 import SkillSection from '../components/skill/SkillSection'
 import ContactSection from '../components/contact/ContactSection'
+import Header from '../components/Header'
 
 const IndexPage = () => (
   <IndexLayout>
+    <Header title='hkoketsu'/>
     <AboutSection />
-    <WorkSection />
     <SkillSection />
     <ContactSection/>
   </IndexLayout>

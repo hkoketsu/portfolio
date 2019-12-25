@@ -21,11 +21,6 @@ const StyledLink = styled.a`
 `
 
 const StyledImg = styled.img`
-  -webkit-transition: 1.5s;
-  -moz-transition: 1.5s;
-  -ms-transition: 1.5s;
-  -o-transition: 1.5s;
-  transition: 1.5s;
-  opacity: 0.8;
   width: 100%;
+  margin-bottom: 10px;  
 `

@@ -5,11 +5,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import 'modern-normalize'
 import '../styles/normalize'
 
-import Header from '../components/Header'
-import LayoutRoot from './LayoutRoot'
-import LayoutMain from './LayoutMain'
 import TopNav from '../components/nav/TopNav'
-import Footer from '../components/Footer'
+import ResetCSS from './reset_css'
 
 interface StaticQueryProps {
   site: {
@@ -34,7 +31,8 @@ const IndexLayout: React.FC = ({ children }) => (
       }
     `}
     render={(data: StaticQueryProps) => (
-      <LayoutRoot>
+      <>
+        <ResetCSS/>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -43,10 +41,10 @@ const IndexLayout: React.FC = ({ children }) => (
           ]}
         />
         <TopNav/>
-        <Header title={data.site.siteMetadata.title} />
-        <LayoutMain>{children}</LayoutMain>
-        <Footer/>
-      </LayoutRoot>
+        <main>
+          {children}
+        </main>
+      </>
     )}
   />
 )
