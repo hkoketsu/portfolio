@@ -10,7 +10,7 @@ type NavItemProp = {
   
 const NavItem: React.FC<NavItemProp> = props => (
   <StyledListItem>
-    <StyledLink href={props.url}>
+    <StyledLink to={props.url}>
       {props.children}
     </StyledLink>
   </StyledListItem>
@@ -22,20 +22,19 @@ const StyledListItem = styled.li`
   list-style-type: none;
 `
 
-const StyledLink = styled.a`
+const StyledLink = styled(Link)`
   position: relative;
   display: inline-block;
-
-  font-size: 1.5rem;
-  font-weight: 600;
-  padding: 0px 24px;
+  
+  padding: 0px 20px;
   
   color: ${colors.white};
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
 
   &:hover,
   &:focus {
-    text-decoration: none;
+    text-decoration: underline;
   }
 `

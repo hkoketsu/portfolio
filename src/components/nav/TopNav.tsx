@@ -1,14 +1,13 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
 import NavItem from './NavItem'
+import { Link } from 'gatsby'
 
 const TopNav: React.FC = () => (
   <StyledTopNav>
     <StyledList>
-      <NavItem url="#about">about</NavItem>
-      <NavItem url="#work">work</NavItem>
-      <NavItem url="#skill">skill</NavItem>
-      <NavItem url="#contact">contact</NavItem>
+      <NavItem url="/">Home</NavItem>
+      <NavItem url='/work'>Works</NavItem>
     </StyledList>
   </StyledTopNav>
 )
@@ -23,8 +22,9 @@ const StyledTopNav = styled.nav`
 `
 const StyledList = styled.ul`
   height: 100%;
-  padding-inline-start: 0;
+  padding: 10px;
+  margin-right: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 `
