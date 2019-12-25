@@ -1,0 +1,59 @@
+{
+  "data": [
+    {
+      "key": "Backend",
+      "values": [
+        {
+          "title": "TypeScript",
+          "rating": 4
+        },
+        {
+          "title": "Kotlin/Java",
+          "rating": 4
+        },
+        {
+          "title": "Spring Boot",
+          "rating": 3
+        },
+        {
+          "title": "Node.js",
+          "rating": 3
+        },
+        {
+          "title": "SQL",
+          "rating": 4
+        }
+      ]
+    },
+    {
+      "key": "Frontend",
+      "values": [
+        {
+          "title": "React (TS)",
+          "rating": 4
+        },
+        {
+          "title": "HTML/CSS",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "key": "Others",
+      "values": [
+        {
+          "title": "Unity (C#)",
+          "rating": 4
+        },
+        {
+          "title": "Android (Kotlin)",
+          "rating": 3
+        },
+        {
+          "title": "C/C++",
+          "rating": 4
+        }
+      ]
+    }
+  ]
+}

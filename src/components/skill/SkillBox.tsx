@@ -4,16 +4,19 @@ import Grid from '@material-ui/core/Grid'
 import Skill from './Skill'
 
 type SkillBoxProps = {
-  title?: string
+  title: string,
+  skills: any[]
 }
 
-const SkillBox: React.FC<SkillBoxProps> = ({ title }) => (
+const SkillBox: React.FC<SkillBoxProps> = ({ title, skills }) => (
   <FlexContent>
     <h2>{title}</h2>
     <Grid container direction='row' spacing={1}>
-      <Skill title='a' year={1} rating={2} />
-      <Skill title='b' year={1} rating={2}/>
-      <Skill title='c' year={1} rating={2}/>
+      {
+        skills.map((skill) => 
+          <Skill title={skill.title} rating={skill.rating} />
+        )
+      }
     </Grid>
   </FlexContent>
 )
@@ -21,5 +24,6 @@ const SkillBox: React.FC<SkillBoxProps> = ({ title }) => (
 export default SkillBox;
 
 const FlexContent = styled.div`
-  padding: 50px;
+  padding: 30px;
+  width: 300px;
 `
