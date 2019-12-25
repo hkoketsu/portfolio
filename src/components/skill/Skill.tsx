@@ -1,25 +1,19 @@
 import * as React from 'react'
-import styled from '@emotion/styled'
 import Grid from '@material-ui/core/Grid'
+import Rating from './Rating'
 
-type SkillProps = {
+export type SkillProps = {
   title: string,
-  year: number,
   rating: number
 }
 
-
-
-const Skill: React.FC<SkillProps> = ({ title, year, rating }) => (
-  <Grid container item xs={12}>
-    <Grid item xs={3}>
+const Skill: React.FC<SkillProps> = ({ title, rating }) => (
+  <Grid container item>
+    <Grid item xs={7}>
       <div>{title}</div>
     </Grid>
-    <Grid item xs={2}>
-      <div>{year}</div>
-    </Grid>
-    <Grid item xs={7}>
-      <div>{rating}</div>
+    <Grid item xs={5}>
+      <Rating rating={rating}/>
     </Grid>
   </Grid>
 )
