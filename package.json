@@ -30,6 +30,7 @@
     "babel-plugin-styled-components": "^1.10.6",
     "classnames": "^2.2.6",
     "gatsby": "^2.18.17",
+    "gatsby-cli": "^2.8.22",
     "gatsby-image": "^2.2.37",
     "gatsby-plugin-canonical-urls": "^2.1.18",
     "gatsby-plugin-emotion": "^4.1.18",
@@ -53,9 +54,11 @@
     "react": "^16.8.6",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "react-hot-loader": "^4.12.18",
     "typescript": "^3.7.4"
   },
   "devDependencies": {
+    "@hot-loader/react-dom": "^16.11.0",
     "@types/classnames": "^2.2.9",
     "@types/node": "^12.12.22",
     "@types/react": "^16.9.17",
