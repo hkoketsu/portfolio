@@ -3,11 +3,11 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import 'modern-normalize'
-import '../styles/normalize'
 
 import TopNav from '../components/nav/TopNav'
-import ResetCSS from './reset_css'
-import NormalizeCSS from './normalize_css'
+import ResetCSS from '../styles/reset_css'
+import NormalizeCSS from '../styles/normalize_css'
+import Container from '../components/Container'
 
 interface StaticQueryProps {
   site: {
@@ -43,9 +43,11 @@ const IndexLayout: React.FC = ({ children }) => (
           ]}
         />
         <TopNav/>
-        <main>
-          {children}
-        </main>
+        <Container>
+          <main>
+            {children}
+          </main>
+        </Container>
       </>
     )}
   />

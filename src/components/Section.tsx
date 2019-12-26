@@ -25,7 +25,7 @@ const Section: React.FC<SectionProps> = ({ title, id, color, children }) => (
 export default Section;
 
 const StyledSection = styled.section`
-  background-color: ${props => props.color ? props.color : 'white'};
+  background-color: ${props => props.color ? props.color : 'black'};
   padding: 50px 0;
 `
 
@@ -36,13 +36,13 @@ const StyledInnerDiv = styled.div`
 `
 
 const StyledTitleArea = styled.div`
-  margin-bottom: 38px;
+  margin-bottom: 50px;
   text-align: center;
 `
 
-const StyledSectionTitle = styled.h2`
+const StyledSectionTitle = styled.h1`
   font-size: 40px;
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1;
   margin-bottom: 15px;
   letter-spacing: .05em;

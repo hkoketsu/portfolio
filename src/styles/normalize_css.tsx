@@ -1,6 +1,7 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
 
+
 const NormalizeCSS = () => (
   <Global
     styles={css`
@@ -29,6 +30,7 @@ const NormalizeCSS = () => (
 
       body {
         margin: 0;
+        color: #f0f0f0;
       }
 
       /**
@@ -37,6 +39,7 @@ const NormalizeCSS = () => (
 
       main {
         display: block;
+        background-color: #000;
       }
 
       /**
@@ -82,6 +85,7 @@ const NormalizeCSS = () => (
 
       a {
         background-color: transparent;
+        color: #2772c2
       }
 
       /**
