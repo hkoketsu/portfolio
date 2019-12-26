@@ -2,10 +2,7 @@
 
 export const colors = {
   brand: '#595959',
-  lilac: '#9d7cbf',
-  accent: '#ffb238',
-  success: '#37b635',
-  warning: '#ec1818',
+  dark_grey: '#2b2b2b',
   ui: {
     bright: '#e0d6eb',
     light: '#f5f3f7',
@@ -61,5 +58,5 @@ export const dimensions = {
 }
 
 export const heights = {
-  header: 300
+  header: 500
 }
