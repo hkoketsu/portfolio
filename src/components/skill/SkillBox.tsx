@@ -10,11 +10,11 @@ type SkillBoxProps = {
 
 const SkillBox: React.FC<SkillBoxProps> = ({ title, skills }) => (
   <FlexContent>
-    <h2>{title}</h2>
+    <SkillTitle>{title}</SkillTitle>
     <Grid container direction='row' spacing={1}>
       {
-        skills.map((skill) => 
-          <Skill title={skill.title} rating={skill.rating} />
+        skills.map((skill: any, index: number) => 
+          <Skill key={index} title={skill.title} rating={skill.rating} />
         )
       }
     </Grid>
@@ -22,6 +22,10 @@ const SkillBox: React.FC<SkillBoxProps> = ({ title, skills }) => (
 )
 
 export default SkillBox;
+
+const SkillTitle = styled.h3`
+  padding-bottom: 15px;
+`
 
 const FlexContent = styled.div`
   padding: 30px;

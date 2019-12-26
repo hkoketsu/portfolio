@@ -9,13 +9,13 @@ import { Grid } from '@material-ui/core'
 const WorkSection: React.FC = () => (
   <Section title='Works' id='work'>
     <CardWrapper>
+      <Grid container md={12}>
       {
-        cardData.data.map((data: any) => (
-          <Grid item xs={6}>
-            <Card src={data.image_src} url={data.url} caption={data.caption} />
-          </Grid>
+        cardData.data.map((data: any, index: number) => (
+            <Card key={index} src={data.image_src} url={data.url} caption={data.caption} />
         ))
       }
+       </Grid>
     </CardWrapper>
   </Section>
 )
@@ -27,4 +27,6 @@ const CardWrapper = styled.div`
   display: flex;
   margin: auto;
   flex-wrap: wrap;
+  align-items: flex-start;
+  min-height: 100vh;
 `

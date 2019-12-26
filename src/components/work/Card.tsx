@@ -12,17 +12,18 @@ type CardImgLinkProps = {
 }
 
 const WordCard: React.FC<CardImgLinkProps> = ({caption, url, src}) => (
-  <StyledCard>
-    <Grid container xs={12} direction='row' alignItems='center'>
-      <Grid item xs={6}>
-        <CardImage href={url} image={src} alt={caption.title} />
+  <Grid item md={6}>
+    <StyledCard>
+      <Grid container sm={12} direction='row' alignItems='center' justify='center'>
+        <Grid item sm={6}>
+          <CardImage href={url} image={src} alt={caption.title} />
+        </Grid>
+        <Grid item sm={6}>
+          <CardCaption title={caption.title} info={caption.info} language={caption.language} url={caption.url} />
+        </Grid>
       </Grid>
-      <Grid item xs={6}>
-        <CardCaption title={caption.title} info={caption.info} language={caption.language} url={caption.url} />
-      </Grid>
-    </Grid>
-    
-  </StyledCard>
+    </StyledCard>
+  </Grid>
 )
 
 export default WordCard
@@ -30,6 +31,6 @@ export default WordCard
 const StyledCard = styled(Card)`
   flex-basis: 50%;
   margin: 10px;
-  padding: 10px;
+  padding: 10px 20px;
 `
 

@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "key": "Backend",
+      "category": "Backend",
       "values": [
         {
           "title": "TypeScript",
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "key": "Frontend",
+      "category": "Frontend",
       "values": [
         {
           "title": "React (TS)",
@@ -39,7 +39,7 @@
       ]
     },
     {
-      "key": "Others",
+      "category": "Others",
       "values": [
         {
           "title": "Unity (C#)",
