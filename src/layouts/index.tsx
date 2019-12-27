@@ -33,8 +33,8 @@ const IndexLayout: React.FC = ({ children }) => (
     `}
     render={(data: StaticQueryProps) => (
       <>
-        <ResetCSS/>
-        <NormalizeCSS/>
+        <ResetCSS />
+        <NormalizeCSS />
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -42,11 +42,9 @@ const IndexLayout: React.FC = ({ children }) => (
             { name: 'keywords', content: data.site.siteMetadata.keywords }
           ]}
         />
-        <TopNav/>
+        <TopNav />
         <Container>
-          <main>
-            {children}
-          </main>
+          <main>{children}</main>
         </Container>
       </>
     )}

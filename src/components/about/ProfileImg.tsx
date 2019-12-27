@@ -4,7 +4,7 @@ import profileImg from '../../img/profile.jpg'
 
 const ProfileImage: React.FC = () => (
   <StyledProfileImage>
-    <StyledImg src={profileImg} alt='profile'/>
+    <StyledImg src={profileImg} alt="profile" />
   </StyledProfileImage>
 )
 

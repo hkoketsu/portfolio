@@ -3,7 +3,7 @@ import Grid from '@material-ui/core/Grid'
 import Rating from './Rating'
 
 export type SkillProps = {
-  title: string,
+  title: string
   rating: number
 }
 
@@ -13,10 +13,9 @@ const Skill: React.FC<SkillProps> = ({ title, rating }) => (
       <div>{title}</div>
     </Grid>
     <Grid item xs={5}>
-      <Rating rating={rating}/>
+      <Rating rating={rating} />
     </Grid>
   </Grid>
 )
 
-export default Skill;
-
+export default Skill

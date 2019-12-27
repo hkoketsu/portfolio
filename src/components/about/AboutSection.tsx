@@ -5,12 +5,11 @@ import Paragraph from './Profile'
 import styled from '@emotion/styled'
 import { colors } from '../../styles/variables'
 
-
 const AboutSection: React.FC = () => (
-  <Section title='About' id='about' color={colors.dark_grey}>
-    <ProfileImage/>
+  <Section title="About" id="about" color={colors.dark_grey}>
+    <ProfileImage />
     <ProfileDesctiption>
-      <Paragraph/>
+      <Paragraph />
     </ProfileDesctiption>
   </Section>
 )

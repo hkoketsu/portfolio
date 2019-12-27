@@ -2,8 +2,8 @@ import * as React from 'react'
 import styled from '@emotion/styled'
 
 type CardImgLinkProps = {
-  href: string,
-  image: string,
+  href: string
+  image: string
   alt: string
 }
 
@@ -15,8 +15,7 @@ const CardImage: React.FC<CardImgLinkProps> = ({ href, image, alt }) => (
 
 export default CardImage
 
-const StyledLink = styled.a`
-`
+const StyledLink = styled.a``
 
 const StyledImg = styled.img`
   width: 100%;

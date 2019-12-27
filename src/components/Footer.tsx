@@ -1,17 +1,15 @@
-import styled from "@emotion/styled";
-import { Link } from "gatsby";
+import styled from '@emotion/styled'
+import { Link } from 'gatsby'
 
 const Footer: React.FC = () => (
   <footer id="footer">
     <PageTop>
-      <Link to='#header'>
-        Page Top
-      </Link>
+      <Link to="#header">Page Top</Link>
     </PageTop>
   </footer>
 )
 
-export default Footer;
+export default Footer
 
 const PageTop = styled.div`
   font-size: 12px;

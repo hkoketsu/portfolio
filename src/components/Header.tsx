@@ -9,7 +9,7 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ title }) => (
-  <StyledHeader id='header'>
+  <StyledHeader id="header">
     <HeaderInner>
       <HeaderTitle>{title}</HeaderTitle>
     </HeaderInner>

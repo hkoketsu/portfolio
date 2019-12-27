@@ -1,7 +1,7 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
 import * as emailjs from 'emailjs-com'
-import { colors } from '../../styles/variables';
+import { colors } from '../../styles/variables'
 
 export default class Form extends React.Component {
   state = {
@@ -15,70 +15,53 @@ export default class Form extends React.Component {
   }
 
   render() {
-    const {name, email, content, nameEmpty, emailEmpty, contentEmpty, submitted} = this.state;
-    return  (
+    const { name, email, content, nameEmpty, emailEmpty, contentEmpty, submitted } = this.state
+    return (
       <StyledForm onSubmit={this.handleSubmit}>
         <FormRow>
           <label>Name</label>
         </FormRow>
         <FormRow>
-          <input
-            type='text'
-            name='name'
-            size={30}
-            value={name}
-            onChange={this.handleInputChange}
-          />
+          <input type="text" name="name" size={30} value={name} onChange={this.handleInputChange} />
         </FormRow>
         <ErrorLabel flag={nameEmpty}>Name must not be empty</ErrorLabel>
         <FormRow>
           <label>Email</label>
         </FormRow>
         <FormRow>
-          <input
-            type='text'
-            name='email'
-            size={30}
-            value={email}
-            onChange={this.handleInputChange}
-          />
+          <input type="text" name="email" size={30} value={email} onChange={this.handleInputChange} />
         </FormRow>
         <ErrorLabel flag={emailEmpty}>Email must not be empty</ErrorLabel>
         <FormRow>
           <label>Content</label>
         </FormRow>
         <FormRow>
-          <textarea
-            name='content'
-            value={content}
-            onChange={this.handleInputChange}
-            rows={10}
-          />
+          <textarea name="content" value={content} onChange={this.handleInputChange} rows={10} />
         </FormRow>
         <ErrorLabel flag={contentEmpty}>Content must not be empty</ErrorLabel>
         <FlexEnd>
           <SubmissionLabel flag={submitted}>Submitted!</SubmissionLabel>
-          <SubmitButton type='submit' >Submit</SubmitButton>
+          <SubmitButton type="submit">Submit</SubmitButton>
         </FlexEnd>
       </StyledForm>
-    );
+    )
   }
 
   handleInputChange = (event: any) => {
     const value = event.target.value
     const name = event.target.name
     this.setState({
-      [name]: value,
+      [name]: value
     })
   }
 
   handleSubmit = (event: any) => {
     event.preventDefault()
-    const { name, email, content } = this.state;
+    const { name, email, content } = this.state
 
-    if (this.validateForm()) return;
+    if (this.validateForm()) return
 
-    console.log("will send email")
+    console.log('will send email')
 
     const templateParams = {
       from_name: email,
@@ -86,14 +69,9 @@ export default class Form extends React.Component {
       message_html: content
     }
 
-    emailjs.send(
-      'gmail',
-      'template_3eqLrrD2',
-      templateParams,
-      'user_0vHnJRNAdwfKoPbosnVpL'
-    )
+    emailjs.send('gmail', 'template_3eqLrrD2', templateParams, 'user_0vHnJRNAdwfKoPbosnVpL')
 
-    this.resetForm();
+    this.resetForm()
   }
 
   resetForm() {
@@ -101,20 +79,20 @@ export default class Form extends React.Component {
       name: '',
       email: '',
       content: ''
-    });
+    })
   }
 
   validateForm() {
-    const { name, email, content } = this.state;
-    
+    const { name, email, content } = this.state
+
     this.setState({
       nameEmpty: name === '',
       emailEmpty: email === '',
-      contentEmpty: content === '',
-    });
+      contentEmpty: content === ''
+    })
 
-    const { nameEmpty, emailEmpty, contentEmpty } = this.state;
-    return nameEmpty || emailEmpty || contentEmpty;
+    const { nameEmpty, emailEmpty, contentEmpty } = this.state
+    return nameEmpty || emailEmpty || contentEmpty
   }
 }
 
@@ -127,7 +105,8 @@ const FormRow = styled.div`
   padding: 10px;
   align-items: center;
 
-  input, textarea {
+  input,
+  textarea {
     border: 1px solid black;
     background-color: lightgrey;
     width: 100%;
@@ -142,11 +121,11 @@ const SubmitButton = styled.button`
 `
 
 const StateLabel = styled.label`
-  display: ${props => props.flag ? 'inline-block' : 'none'};
+  display: ${props => (props.flag ? 'inline-block' : 'none')};
 `
 
 const ErrorLabel = styled(StateLabel)`
-  color: red;  
+  color: red;
 `
 const SubmissionLabel = styled(StateLabel)`
   color: ${colors.white};

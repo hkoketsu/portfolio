@@ -7,7 +7,7 @@ const TopNav: React.FC = () => (
   <StyledTopNav>
     <StyledList>
       <NavItem url="/">Home</NavItem>
-      <NavItem url='/work'>Works</NavItem>
+      <NavItem url="/work">Works</NavItem>
     </StyledList>
   </StyledTopNav>
 )

@@ -1,11 +1,9 @@
-import React from 'react';
-import { Global, css } from '@emotion/core';
-
+import React from 'react'
+import { Global, css } from '@emotion/core'
 
 const NormalizeCSS = () => (
   <Global
     styles={css`
-      
       /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
       /* Document
@@ -85,7 +83,7 @@ const NormalizeCSS = () => (
 
       a {
         background-color: transparent;
-        color: #2772c2
+        color: #2772c2;
       }
 
       /**
@@ -185,7 +183,8 @@ const NormalizeCSS = () => (
       */
 
       button,
-      input { /* 1 */
+      input {
+        /* 1 */
         overflow: visible;
       }
 
@@ -195,7 +194,8 @@ const NormalizeCSS = () => (
       */
 
       button,
-      select { /* 1 */
+      select {
+        /* 1 */
         text-transform: none;
       }
 
@@ -204,9 +204,9 @@ const NormalizeCSS = () => (
       */
 
       button,
-      [type="button"],
-      [type="reset"],
-      [type="submit"] {
+      [type='button'],
+      [type='reset'],
+      [type='submit'] {
         -webkit-appearance: button;
       }
 
@@ -215,9 +215,9 @@ const NormalizeCSS = () => (
       */
 
       button::-moz-focus-inner,
-      [type="button"]::-moz-focus-inner,
-      [type="reset"]::-moz-focus-inner,
-      [type="submit"]::-moz-focus-inner {
+      [type='button']::-moz-focus-inner,
+      [type='reset']::-moz-focus-inner,
+      [type='submit']::-moz-focus-inner {
         border-style: none;
         padding: 0;
       }
@@ -227,9 +227,9 @@ const NormalizeCSS = () => (
       */
 
       button:-moz-focusring,
-      [type="button"]:-moz-focusring,
-      [type="reset"]:-moz-focusring,
-      [type="submit"]:-moz-focusring {
+      [type='button']:-moz-focusring,
+      [type='reset']:-moz-focusring,
+      [type='submit']:-moz-focusring {
         outline: 1px dotted ButtonText;
       }
 
@@ -278,8 +278,8 @@ const NormalizeCSS = () => (
       * 2. Remove the padding in IE 10.
       */
 
-      [type="checkbox"],
-      [type="radio"] {
+      [type='checkbox'],
+      [type='radio'] {
         box-sizing: border-box; /* 1 */
         padding: 0; /* 2 */
       }
@@ -288,8 +288,8 @@ const NormalizeCSS = () => (
       * Correct the cursor style of increment and decrement buttons in Chrome.
       */
 
-      [type="number"]::-webkit-inner-spin-button,
-      [type="number"]::-webkit-outer-spin-button {
+      [type='number']::-webkit-inner-spin-button,
+      [type='number']::-webkit-outer-spin-button {
         height: auto;
       }
 
@@ -298,7 +298,7 @@ const NormalizeCSS = () => (
       * 2. Correct the outline style in Safari.
       */
 
-      [type="search"] {
+      [type='search'] {
         -webkit-appearance: textfield; /* 1 */
         outline-offset: -2px; /* 2 */
       }
@@ -307,7 +307,7 @@ const NormalizeCSS = () => (
       * Remove the inner padding in Chrome and Safari on macOS.
       */
 
-      [type="search"]::-webkit-search-decoration {
+      [type='search']::-webkit-search-decoration {
         -webkit-appearance: none;
       }
 
@@ -358,9 +358,8 @@ const NormalizeCSS = () => (
       [hidden] {
         display: none;
       }
-      
     `}
   />
-);
+)
 
-export default NormalizeCSS;
+export default NormalizeCSS

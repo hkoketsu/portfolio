@@ -4,17 +4,16 @@ import CardImage from './CardImage'
 import CardCaption, { ICaption } from './CardCaption'
 import { Grid, Card } from '@material-ui/core'
 
-
 type CardImgLinkProps = {
-  src: string,
-  url: string,
+  src: string
+  url: string
   caption: ICaption
 }
 
-const WordCard: React.FC<CardImgLinkProps> = ({caption, url, src}) => (
+const WordCard: React.FC<CardImgLinkProps> = ({ caption, url, src }) => (
   <Grid item md={6}>
     <StyledCard>
-      <Grid container item sm={12} direction='row' alignItems='center' justify='center'>
+      <Grid container item sm={12} direction="row" alignItems="center" justify="center">
         <Grid item sm={6}>
           <CardImage href={url} image={src} alt={caption.title} />
         </Grid>
@@ -38,7 +37,5 @@ const StyledCard = styled(Card)`
     box-shadow: 3px 3px 10px 0px lightgray;
     transform: translateY(-3px);
     transition: 0.3s;
-
   }
 `
-

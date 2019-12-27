@@ -2,8 +2,8 @@ import * as React from 'react'
 import styled from '@emotion/styled'
 
 type SectionProps = {
-  title: string,
-  id: string,
+  title: string
+  id: string
   color?: string
 }
 
@@ -11,21 +11,17 @@ const Section: React.FC<SectionProps> = ({ title, id, color, children }) => (
   <StyledSection id={id} color={color}>
     <StyledInnerDiv>
       <StyledTitleArea>
-        <StyledSectionTitle>
-          {title}
-        </StyledSectionTitle>
+        <StyledSectionTitle>{title}</StyledSectionTitle>
       </StyledTitleArea>
-      <StyledSectionBody>
-        {children}
-      </StyledSectionBody>
+      <StyledSectionBody>{children}</StyledSectionBody>
     </StyledInnerDiv>
   </StyledSection>
 )
 
-export default Section;
+export default Section
 
 const StyledSection = styled.section`
-  background-color: ${props => props.color ? props.color : 'black'};
+  background-color: ${props => (props.color ? props.color : 'black')};
   padding: 50px 0;
 `
 
@@ -45,7 +41,7 @@ const StyledSectionTitle = styled.h1`
   font-weight: bold;
   line-height: 1;
   margin-bottom: 15px;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 `
 
 const StyledSectionBody = styled.div`

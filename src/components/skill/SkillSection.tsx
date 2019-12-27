@@ -5,18 +5,16 @@ import SkillBox from './SkillBox'
 import skillData from './skill_data'
 
 const SkillSection: React.FC = () => (
-  <Section title='Skills' id='skill'>
+  <Section title="Skills" id="skill">
     <HorizontalDiv>
-      {
-        skillData.data.map( (skillBlock: any, index: number) => (
-          <SkillBox key={index} title={skillBlock.category} skills={skillBlock.values}/>
-        ))
-      }
+      {skillData.data.map((skillBlock: any, index: number) => (
+        <SkillBox key={index} title={skillBlock.category} skills={skillBlock.values} />
+      ))}
     </HorizontalDiv>
   </Section>
 )
 
-export default SkillSection;
+export default SkillSection
 
 const HorizontalDiv = styled.div`
   display: flex;

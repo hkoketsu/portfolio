@@ -8,18 +8,24 @@ import githubIcon from '../../img/icon/github.png'
 const ContactList: React.FC = () => (
   <StyledList>
     <ContactListItem>
-      <a href="https://www.linkedin.com/in/hkoketsu/" target="_blank"><img src={linkedinIcon} alt="linkedin"/></a>
+      <a href="https://www.linkedin.com/in/hkoketsu/" target="_blank">
+        <img src={linkedinIcon} alt="linkedin" />
+      </a>
     </ContactListItem>
     <ContactListItem>
-      <a href="https://github.com/hkoketsu" target="_blank"><img src={githubIcon} alt="github"/></a>
+      <a href="https://github.com/hkoketsu" target="_blank">
+        <img src={githubIcon} alt="github" />
+      </a>
     </ContactListItem>
     <ContactListItem>
-      <a href="https://www.facebook.com/hiroki0kouketsu" target="_blank"><img src={facebookIcon} alt="facebook"/></a>
+      <a href="https://www.facebook.com/hiroki0kouketsu" target="_blank">
+        <img src={facebookIcon} alt="facebook" />
+      </a>
     </ContactListItem>
   </StyledList>
 )
 
-export default ContactList;
+export default ContactList
 
 const StyledList = styled.ul`
   display: flex;

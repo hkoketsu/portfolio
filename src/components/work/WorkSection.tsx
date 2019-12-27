@@ -5,17 +5,14 @@ import Card from './Card'
 import cardData from './card_data'
 import { Grid } from '@material-ui/core'
 
-
 const WorkSection: React.FC = () => (
-  <Section title='Works' id='work'>
+  <Section title="Works" id="work">
     <CardWrapper>
       <Grid container item md={12}>
-      {
-        cardData.data.map((data: any, index: number) => (
-            <Card key={index} src={data.image_src} url={data.url} caption={data.caption} />
-        ))
-      }
-       </Grid>
+        {cardData.data.map((data: any, index: number) => (
+          <Card key={index} src={data.image_src} url={data.url} caption={data.caption} />
+        ))}
+      </Grid>
     </CardWrapper>
   </Section>
 )

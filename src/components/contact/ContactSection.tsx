@@ -6,17 +6,17 @@ import Form from './Form'
 import ContactList from './ContactList'
 
 const ContactSection: React.FC = () => (
-  <Section title='Contact' id='contact' color={colors.dark_grey}>
+  <Section title="Contact" id="contact" color={colors.dark_grey}>
     <Center>
-      <Form/>
+      <Form />
       <Center>
-        <ContactList/>
+        <ContactList />
       </Center>
     </Center>
   </Section>
 )
 
-export default ContactSection;
+export default ContactSection
 
 const Center = styled.div`
   width: 100%;

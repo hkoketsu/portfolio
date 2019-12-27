@@ -6,10 +6,10 @@ import Header from '../components/Header'
 
 const IndexPage = () => (
   <IndexLayout>
-    <Header title='hkoketsu'/>
+    <Header title="hkoketsu" />
     <AboutSection />
     <SkillSection />
-    <ContactSection/>
+    <ContactSection />
   </IndexLayout>
 )
 

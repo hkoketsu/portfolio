@@ -2,12 +2,12 @@ import * as React from 'react'
 import styled from '@emotion/styled'
 
 export interface ICaption {
-  title: string,
-  info: string,
+  title: string
+  info: string
   language: string
 }
 
-const CardCaption: React.FC<ICaption> = (caption) => (
+const CardCaption: React.FC<ICaption> = caption => (
   <StyledCaptionWrapper>
     <StyledTitle>{caption.title}</StyledTitle>
     <StyledInfo>{caption.info}</StyledInfo>

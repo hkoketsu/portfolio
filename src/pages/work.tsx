@@ -4,11 +4,10 @@ import IndexLayout from '../layouts'
 import WorkSection from '../components/work/WorkSection'
 import styled from '@emotion/styled'
 
-
 const WorkPage = () => (
   <IndexLayout>
-    <TopMargin/>
-    <WorkSection/>
+    <TopMargin />
+    <WorkSection />
   </IndexLayout>
 )
 

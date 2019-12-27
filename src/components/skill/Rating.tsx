@@ -5,16 +5,11 @@ type RatingProps = {
   rating: number
 }
 
+const stars = (star: string, rating: number) => (star === '★' ? star.repeat(rating) : star.repeat(5 - rating))
 
-const stars = (star: string, rating: number) => 
-  star === '★' ? star.repeat(rating) : star.repeat(5-rating);
+const Rating: React.FC<RatingProps> = ({ rating }) => <StyledRating rating={rating} />
 
-const Rating: React.FC<RatingProps> = ({ rating }) => (
-  <StyledRating rating={rating}/>
-)
-
-export default Rating;
-
+export default Rating
 
 const StyledRating = styled.div`
   &::before {
