@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'hkoketsu',
     description: 'A portfolio of Hiroki Koketsu.',
-    siteUrl: 'http://localhost:8000',
+    siteUrl: 'http://hkoketsu.com',
     author: {
       name: 'Hiroki Koketsu',
       url: 'https://www.linkedin.com/in/hkoketsu/',
@@ -47,7 +47,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com'
+        siteUrl: 'https://hkoketsu.com'
       }
     },
     'gatsby-plugin-emotion',

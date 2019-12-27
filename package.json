@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-typescript-plus",
-  "description": "A starter kit for TypeScript-based Gatsby projects with sensible defaults.",
+  "name": "hkoketsu-portfolio",
+  "description": "A portfolio of Hiroki Koketsu. Made with Gatsby",
   "version": "1.0.0",
   "private": true,
-  "author": "Resi Respati <resir014@gmail.com>",
+  "author": "Hiroki Koketsu <hiroki.koketsu@gmail.com>",
   "keywords": [
     "gatsby"
   ],
