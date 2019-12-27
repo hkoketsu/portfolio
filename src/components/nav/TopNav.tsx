@@ -1,7 +1,6 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
 import NavItem from './NavItem'
-import { Link } from 'gatsby'
 
 const TopNav: React.FC = () => (
   <StyledTopNav>
@@ -23,7 +22,6 @@ const StyledTopNav = styled.nav`
 const StyledList = styled.ul`
   height: 100%;
   padding: 10px;
-  margin-right: 50px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
