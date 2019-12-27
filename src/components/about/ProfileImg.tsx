@@ -12,11 +12,11 @@ export default ProfileImage
 
 const StyledProfileImage = styled.div`
   flex-basis: 20%;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
 `
 
 const StyledImg = styled.img`
   margin: 0 auto;
   border-radius: 50%;
-  box-shadow: 0 0 25px 0 #d9d9d9;
+  box-shadow: 0 0 15px 0 #d9d9d9;
 `

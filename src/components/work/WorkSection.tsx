@@ -9,7 +9,7 @@ import { Grid } from '@material-ui/core'
 const WorkSection: React.FC = () => (
   <Section title='Works' id='work'>
     <CardWrapper>
-      <Grid container md={12}>
+      <Grid container item md={12}>
       {
         cardData.data.map((data: any, index: number) => (
             <Card key={index} src={data.image_src} url={data.url} caption={data.caption} />

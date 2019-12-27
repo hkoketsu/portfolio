@@ -3,6 +3,7 @@
 export const colors = {
   brand: '#595959',
   dark_grey: '#2b2b2b',
+  blue: '#2772c2',
   ui: {
     bright: '#e0d6eb',
     light: '#f5f3f7',
@@ -14,7 +15,7 @@ export const colors = {
     copy: 'hsla(270, 15.797828016000002%, 0%, 0.88)',
     calm: 'rgba(0, 0, 0, 0.54)'
   },
-  white: '#fff',
+  white: '#f0f0f0',
   black: '#000'
 }
 

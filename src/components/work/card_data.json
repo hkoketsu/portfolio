@@ -20,7 +20,7 @@
     },
     {
       "image_src": "global-jp-bbs.png",
-      "url": "https://global-jp-bbs.herokuapp.com/",
+      "url": "https://github.com/hkoketsu/global-jp-bbs",
       "caption": {
         "title": "Global JP BBS",
         "info": "Web app",

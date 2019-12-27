@@ -19,4 +19,5 @@ export default AboutSection
 
 const ProfileDesctiption = styled.div`
   flex-basis: 62%;
+  margin: 0 auto;
 `
