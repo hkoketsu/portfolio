@@ -22,6 +22,7 @@ const StyledHeader = styled.header`
   display: flex;
   align-items: center;
   background-image: url(${oceanImg});
+  background-size: cover;
   color: #f7f7f7;
   justify-content: center;
   height: 100vh;
