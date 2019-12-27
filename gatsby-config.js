@@ -56,6 +56,17 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
-    
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'hkoketsu',
+        short_name: `hkoketsu`,
+        start_url: `/`,
+        background_color: `#000`,
+        theme_color: `#2772c2`,
+        display: `standalone`,
+        icon: 'src/img/ocean.jpg'
+      },
+    },
   ]
 }
