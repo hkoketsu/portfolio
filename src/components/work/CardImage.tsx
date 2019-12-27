@@ -20,5 +20,5 @@ const StyledLink = styled.a`
 
 const StyledImg = styled.img`
   width: 100%;
-  margin: 10px 10px;
+  margin: 10px auto;
 `

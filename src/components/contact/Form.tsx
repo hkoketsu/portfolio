@@ -52,7 +52,7 @@ export default class Form extends React.Component {
             name='content'
             value={content}
             onChange={this.handleInputChange}
-            cols={50} rows={10}
+            rows={10}
           />
         </FormRow>
         <ErrorLabel flag={contentEmpty}>Content must not be empty</ErrorLabel>
@@ -130,6 +130,7 @@ const FormRow = styled.div`
   input, textarea {
     border: 1px solid black;
     background-color: lightgrey;
+    width: 100%;
   }
 `
 

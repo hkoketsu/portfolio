@@ -19,5 +19,7 @@ const ContactSection: React.FC = () => (
 export default ContactSection;
 
 const Center = styled.div`
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
 `
