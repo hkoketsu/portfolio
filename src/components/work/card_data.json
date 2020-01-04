@@ -10,6 +10,15 @@
       }
     },
     {
+      "image_src": "ubc-insight.png",
+      "url": "https://github.com/ubccpsc/310/blob/2019sept/project/README.md",
+      "caption": {
+        "title": "UBC Insight",
+        "info": "Full-Stack Web App",
+        "language": "TS / Node / JS / HTML / CSS"
+      }
+    },
+    {
       "image_src": "rental-system.png",
       "url": "https://github.com/hkoketsu/rental-system",
       "caption": {
