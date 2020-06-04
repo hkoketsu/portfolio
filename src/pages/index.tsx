@@ -1,3 +1,4 @@
+import React from 'react'
 import IndexLayout from '../layouts'
 import AboutSection from '../components/about/AboutSection'
 import SkillSection from '../components/skill/SkillSection'
