@@ -1,5 +1,3 @@
-'use strict'
-
 module.exports = {
   siteMetadata: {
     title: 'hkoketsu',
@@ -66,7 +64,13 @@ module.exports = {
         theme_color: `#2772c2`,
         display: `standalone`,
         icon: 'src/img/ocean.jpg'
-      },
+      }
     },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`
+      }
+    }
   ]
 }
